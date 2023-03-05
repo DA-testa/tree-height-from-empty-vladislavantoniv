@@ -41,7 +41,7 @@ def main():
     elif choose_arr[0]=="F":
         fileName=input()
         if fileName[0]!='a':
-            fileName="/workspaces/tree-height-from-empty-vladislavantoniv/test/"+fileName+".txt"
+            fileName="test/"+fileName
             with open(fileName,"r") as f:
                 numcount=f.readlines()[0]
                 numcount=int(numcount)
