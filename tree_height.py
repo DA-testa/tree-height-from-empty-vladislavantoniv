@@ -8,6 +8,7 @@ import numpy as np
 def compute_height(n, parents):
     # Write this function
     max_height=0;
+    max_pos_heihght=n
     for i in range (n):
         n=i
         count=0
@@ -16,6 +17,9 @@ def compute_height(n, parents):
             count=count+1
         if max_height < count:
             max_height=count
+        if count==max_pos_heihght:
+            max_height=count
+            break
     # Your code here
     return max_height
 
